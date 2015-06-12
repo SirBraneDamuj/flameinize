@@ -32,6 +32,8 @@ public class PlayerMovement : MonoBehaviour {
 			currentVelocity.y = jumpSpeed;
 		}
 		rigidbody2D.velocity = currentVelocity;
+		
+		//transform.rotation = Vector2.zero;
 	}
 	
 	void OnCollisionStay2D(Collision2D collision) {
